@@ -1,4 +1,4 @@
-FORK of hpaolini/tiny-nvr
+FORK of https://github.com/hpaolini/tiny-nvr
 
 To support ARM based systems (hopefully this will be merged in at some point)
 
