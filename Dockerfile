@@ -7,10 +7,10 @@
 #       rtsp://username:password@address:port//Streaming/Channels/2 \
 #       camera1
 
-FROM alpine:3.8
+FROM alpine:3.8 
 
 LABEL version="1.0" \
-      maintainer="hpaolini"
+      maintainer="wizardels"
 
 # TZ                    : set your timezone, lookup your location in the "tz database"
 # DIR_NAME_FORCE        : if set to "true", forces the use of the folder name **WARNING: 
@@ -29,8 +29,8 @@ ENV TZ=Europe/Rome \
     VIDEO_FORMAT=mp4
 
 ENV BASH_VERSION=4.4.19-r1 \
-    TZDATA_VERSION=2018f-r0 \
-    FFMPEG_VERSION=3.4.4-r1
+    TZDATA_VERSION=2020a-r0 \
+    FFMPEG_VERSION=3.4.6-r0
 
 RUN apk update \
     && apk add bash=$BASH_VERSION tzdata=$TZDATA_VERSION ffmpeg=$FFMPEG_VERSION \
